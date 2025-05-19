@@ -25,7 +25,7 @@ export function CurrentTaskItem({ id }: { id: string }): React.JSX.Element {
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState<boolean>(false);
 
   // Функция для навигации
-  const navigate = useNavigate();
+  const navigate = useNavigate;
 
   // Получаем диспатч
   const dispatch = useAppDispatch();

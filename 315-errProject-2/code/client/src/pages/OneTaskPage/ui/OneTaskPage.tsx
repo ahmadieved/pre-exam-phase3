@@ -4,7 +4,7 @@ import { useParams } from "react-router";
 export function OneTaskPage(): React.JSX.Element {
 
     // Получаем id из url
-    const { id } = useParams();
+    const { id } = useParams;
 
     // Если id не найден, то возвращаем сообщение
     if (!id) {

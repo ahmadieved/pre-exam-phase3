@@ -64,10 +64,10 @@ export const deleteTaskThunk = createAsyncThunk<
   IApiResponseSuccess<ITask>,
   number,
   { rejectValue: IApiResponseReject }
->(TASK_THUNKS_TYPES.DELETE_TASK, async (taskId, { rejectWithValue }) => {
+>(TASK_THUNKS_TYPES.DELETE_TASK, async (_, { rejectWithValue }) => {
   try {
     const { data } = await axiosInstance.delete<IApiResponseSuccess<ITask>>(
-      `${TASKS_API_ROUTES.TASKS}/${taskId}`
+      `${TASKS_API_ROUTES.TASKS}`
     );
     return data;
   } catch (error) {

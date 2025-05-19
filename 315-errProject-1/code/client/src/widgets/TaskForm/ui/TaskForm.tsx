@@ -28,7 +28,7 @@ export function TaskForm(): React.JSX.Element {
   ): Promise<void> {
     try {
       event.preventDefault();
-      dispatch(createTaskThunk(inputs));
+      dispatch(createTaskThunk);
     } catch (error) {
       console.log(error);
     }

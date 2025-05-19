@@ -22,7 +22,7 @@ export function Router(): React.JSX.Element {
           {/* Публичные маршруты */}
           <Route element={<PublicRouter />}>
             <Route path={CLIENT_ROUTES.SIGN_IN} element={<SignInPage />} />
-            <Route path={CLIENT_ROUTES.SIGN_UP} element={<SignUpPage />} />
+            <Route path={CLIENT_ROUTES.SIGN_IN} element={<SignUpPage />} />
           </Route>
 
           {/* Приватные маршруты */}

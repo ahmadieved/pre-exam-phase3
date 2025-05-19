@@ -14,7 +14,7 @@ import { configureStore } from "@reduxjs/toolkit";
 const store = configureStore({
   reducer: {
     user: userReducer,
-    task: taskReducer,
+   //  task: taskReducer,
   },
 });
 

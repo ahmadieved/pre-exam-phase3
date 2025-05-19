@@ -8,7 +8,7 @@ import { changeHandler } from "@/shared/utils";
 import { Modal } from "@/shared/ui";
 
 // Компонент для отображения текущей задачи
-export function CurrentTaskItem({ id }: { id: string }): React.JSX.Element {
+export function CurrentTaskItem({ id }): React.JSX.Element {
   // Получаем состояние задач
   const { tasks } = useAppSelector((state) => state.task);
 
@@ -28,7 +28,7 @@ export function CurrentTaskItem({ id }: { id: string }): React.JSX.Element {
   const navigate = useNavigate();
 
   // Получаем диспатч
-  const dispatch = useAppDispatch();
+  const dispatch = useAppDispatch;
 
   // Если задача не найдена, то возвращаем сообщение
   if (!currentTaskItem) {

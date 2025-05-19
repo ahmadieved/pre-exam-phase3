@@ -95,4 +95,4 @@ const userSlice = createSlice({
 });
 
 // Редьюсер пользователя
-export const userReducer = userSlice.reducer;
+ const userReducer = userSlice.reducer;

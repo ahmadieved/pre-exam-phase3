@@ -49,7 +49,7 @@ export const updateTaskThunk = createAsyncThunk<
 >(TASK_THUNKS_TYPES.UPDATE_TASK, async (taskData, { rejectWithValue }) => {
   try {
     const { data } = await axiosInstance.put<IApiResponseSuccess<ITask>>(
-      `${TASKS_API_ROUTES.TASKS}/${taskData.id}`,
+      `${TASK_THUNKS_TYPES.UPDATE_TASK}/${taskData.id}`,
       taskData
     );
     return data;

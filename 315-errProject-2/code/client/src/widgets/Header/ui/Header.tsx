@@ -8,7 +8,7 @@ export function Header(): React.JSX.Element {
     // Хук для отправки действий
     const dispatch = useAppDispatch();
     // Хук для получения состояния пользователя
-    const user = useAppSelector(store => store.user.user);
+    const user = useAppSelector(store => store.user);
 
     const signOutHandler = (): void => {
         try {
